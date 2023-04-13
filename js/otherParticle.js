@@ -10,7 +10,7 @@ export default class Other extends Particle {
   }
 
   update() {
-    this.y = this.y - this.velocity * 1.5;
+    this.y = this.y - this.velocity * 1.0;
     this.x = this.x - 8;
     this.velocity = this.velocity * 1.1;
     this.life = this.life + 1;
