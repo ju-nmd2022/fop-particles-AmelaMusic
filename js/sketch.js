@@ -1,4 +1,6 @@
 import Fire from "./fire.js";
+import Water from "./waterParticle.js";
+import Other from "./otherParticle.js";
 
 let particles = [];
 
@@ -23,8 +25,11 @@ window.draw = draw;
 
 function mouseClicked() {
   for (let i = 0; i < 100; i++) {
-    let particle = new Fire(mouseX, mouseY);
+    let particle1 = new Water(mouseX, mouseY);
+    let particle = new Other(mouseX, mouseY);
+    // let particle = new Fire(mouseX, mouseY);
     particles.push(particle);
+    particles.push(particle1);
   }
 }
 window.mouseClicked = mouseClicked;
